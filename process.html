@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novara Natural | Quality & Process</title>
+    <meta name="description" content="Discover our rigorous quality assurance and modern dehydration processes.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'novara-green': '#1A4D2E',
+                        'novara-earth': '#8B5E3C',
+                        'novara-beige': '#F5E6CA',
+                        'novara-white': '#FAF9F6',
+                        'novara-gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-novara-white text-gray-800 antialiased font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-novara-white/90 backdrop-blur-md shadow-sm transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <span class="text-2xl font-serif font-bold text-novara-green tracking-wide">NOVARA <span
+                                class="text-novara-earth font-light">NATURAL</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation">Home</a>
+                    <a href="about.html"
+                        class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation">About
+                        Us</a>
+                    <a href="products.html"
+                        class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation">Products</a>
+                    <a href="process.html"
+                        class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation text-novara-earth font-bold">Quality
+                        & Process</a>
+                    <a href="gallery.html"
+                        class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation">Gallery</a>
+                    <a href="contact.html"
+                        class="px-5 py-2.5 bg-novara-green text-white font-medium rounded-full hover:bg-novara-earth transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Contact
+                        Us</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-novara-green hover:text-novara-earth focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100 p-5 flex flex-col space-y-4 opacity-0 transition-all duration-300 ease-in-out transform -translate-y-[20px] md:hidden">
+            <a href="index.html"
+                class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Home</a>
+            <a href="about.html"
+                class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">About
+                Us</a>
+            <a href="products.html"
+                class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Products</a>
+            <a href="process.html"
+                class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Quality
+                & Process</a>
+            <a href="gallery.html"
+                class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Gallery</a>
+            <a href="contact.html"
+                class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Contact
+                Us</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative bg-novara-green text-white py-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1587049352857-8a5e517d6092?q=80&w=2670&auto=format&fit=crop"
+                alt="Laboratory Quality" class="w-full h-full object-cover opacity-30">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-4 reveal active">From Farm to Pack</h1>
+            <p class="text-xl md:text-2xl text-novara-beige max-w-2xl mx-auto font-light reveal active delay-100">Our
+                meticulous process ensures the highest standards of safety and quality.</p>
+        </div>
+    </header>
+
+    <main class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Process Steps -->
+            <div class="relative border-l-4 border-novara-green/20 ml-6 md:ml-12 space-y-16">
+                <!-- Step 1 -->
+                <div class="relative pl-12 md:pl-20 reveal">
+                    <div
+                        class="absolute -left-[22px] md:-left-[26px] bg-novara-white border-4 border-novara-green w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-novara-green font-bold text-lg md:text-xl shadow-lg z-10">
+                        1</div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
+                        <div class="md:flex gap-8 items-center">
+                            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                                <img src="https://images.unsplash.com/photo-1595855709940-bf9433d3c756?q=80&w=2670&auto=format&fit=crop"
+                                    class="rounded-lg w-full h-48 object-cover shadow-md" alt="Harvesting">
+                            </div>
+                            <div class="w-full md:w-2/3">
+                                <h3 class="text-2xl font-serif font-bold text-novara-green mb-3">Ethical Sourcing &
+                                    Harvesting</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    We start by selecting only the finest, freshest produce from our network of
+                                    certified organic farms. Harvesting is done at peak ripeness to ensure maximum
+                                    nutrient density and flavor profile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative pl-12 md:pl-20 reveal delay-100">
+                    <div
+                        class="absolute -left-[22px] md:-left-[26px] bg-novara-white border-4 border-novara-gold w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-novara-gold font-bold text-lg md:text-xl shadow-lg z-10">
+                        2</div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
+                        <div class="md:flex gap-8 items-center">
+                            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                                <img src="https://images.unsplash.com/photo-1606859191214-25806e8e2423?q=80&w=2546&auto=format&fit=crop"
+                                    class="rounded-lg w-full h-48 object-cover shadow-md" alt="Washing">
+                            </div>
+                            <div class="w-full md:w-2/3">
+                                <h3 class="text-2xl font-serif font-bold text-novara-green mb-3">Cleaning & Preparation
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Every fruit, vegetable, and herb undergoes a rigorous multi-stage cleaning process
+                                    using purified water. We then peel, slice, and prepare ingredients with precision to
+                                    ensure uniform dehydration.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative pl-12 md:pl-20 reveal delay-200">
+                    <div
+                        class="absolute -left-[22px] md:-left-[26px] bg-novara-white border-4 border-novara-earth w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-novara-earth font-bold text-lg md:text-xl shadow-lg z-10">
+                        3</div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
+                        <div class="md:flex gap-8 items-center">
+                            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                                <img src="https://images.unsplash.com/photo-1635321356889-10526084930b?q=80&w=2670&auto=format&fit=crop"
+                                    class="rounded-lg w-full h-48 object-cover shadow-md" alt="Dehydration">
+                            </div>
+                            <div class="w-full md:w-2/3">
+                                <h3 class="text-2xl font-serif font-bold text-novara-green mb-3">Controlled Dehydration
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Using state-of-the-art low-temperature dehydration technology, we remove moisture
+                                    while locking in vitamins, minerals, and the natural essence of the ingredients.
+                                    This preserves shelf life without artificial preservatives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative pl-12 md:pl-20 reveal delay-300">
+                    <div
+                        class="absolute -left-[22px] md:-left-[26px] bg-novara-white border-4 border-novara-green w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-novara-green font-bold text-lg md:text-xl shadow-lg z-10">
+                        4</div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
+                        <div class="md:flex gap-8 items-center">
+                            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                                <img src="https://images.unsplash.com/photo-1644318728956-6218d6124571?q=80&w=2670&auto=format&fit=crop"
+                                    class="rounded-lg w-full h-48 object-cover shadow-md" alt="Quality Check">
+                            </div>
+                            <div class="w-full md:w-2/3">
+                                <h3 class="text-2xl font-serif font-bold text-novara-green mb-3">Quality Testing &
+                                    Packaging</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Final batches are tested for moisture content and purity. We package them in
+                                    export-grade, airtight, eco-friendly materials to ensure they reach you as fresh as
+                                    the day they were harvested.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Brand -->
+            <div class="md:col-span-1">
+                <a href="index.html" class="block mb-6">
+                    <span class="text-3xl font-serif font-bold text-white tracking-wide">NOVARA <span
+                            class="text-novara-gold font-light">NATURAL</span></span>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Bringing the purity of nature to the world. Premium dehydrated foods and tea for the discerning
+                    global market.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-novara-gold hover:text-white transition-all"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-novara-gold hover:text-white transition-all"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-novara-gold hover:text-white transition-all"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- Quick Links -->
+            <div class="md:col-span-1">
+                <h4 class="text-white font-serif font-bold text-lg mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="index.html" class="hover:text-novara-gold transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-novara-gold transition-colors">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-novara-gold transition-colors">Our Products</a></li>
+                    <li><a href="process.html" class="hover:text-novara-gold transition-colors">Quality Assurance</a>
+                    </li>
+                    <li><a href="gallery.html" class="hover:text-novara-gold transition-colors">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-novara-gold transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Products -->
+            <div class="md:col-span-1">
+                <h4 class="text-white font-serif font-bold text-lg mb-6">Our Products</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="products.html#tea" class="hover:text-novara-gold transition-colors">Premium Teas</a>
+                    </li>
+                    <li><a href="products.html#fruits" class="hover:text-novara-gold transition-colors">Dehydrated
+                            Fruits</a></li>
+                    <li><a href="products.html#vegetables" class="hover:text-novara-gold transition-colors">Dehydrated
+                            Vegetables</a></li>
+                    <li><a href="products.html#herbs" class="hover:text-novara-gold transition-colors">Herbs &
+                            Spices</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="md:col-span-1">
+                <h4 class="text-white font-serif font-bold text-lg mb-6">Contact Us</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-location-dot mt-1 mr-3 text-novara-gold"></i>
+                        <span>123 Green Valley Road, <br>Hill Country, Sri Lanka</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-phone mr-3 text-novara-gold"></i>
+                        <span>+94 77 123 4567</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-envelope mr-3 text-novara-gold"></i>
+                        <span>info@novaranatural.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <p>&copy; 2026 Novara Natural. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

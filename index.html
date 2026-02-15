@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novara Natural | Crafted by Nature - Home</title>
+    <meta name="description" content="Novara Natural - Export-grade dehydrated foods and natural tea products. Crafted by Nature for purity and sustainability.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'novara-green': '#1A4D2E',
+                        'novara-earth': '#8B5E3C',
+                        'novara-beige': '#F5E6CA',
+                        'novara-white': '#FAF9F6',
+                        'novara-gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-novara-white text-gray-800 antialiased font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-novara-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                         <span class="text-2xl font-serif font-bold text-novara-green tracking-wide">NOVARA <span class="text-novara-earth font-light">NATURAL</span></span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation">Home</a>
+                    <a href="about.html" class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation">About Us</a>
+                    <a href="products.html" class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation">Products</a>
+                    <a href="process.html" class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation">Quality & Process</a>
+                    <a href="gallery.html" class="text-novara-green hover:text-novara-earth font-medium transition-colors hover-underline-animation">Gallery</a>
+                    <a href="contact.html" class="px-5 py-2.5 bg-novara-green text-white font-medium rounded-full hover:bg-novara-earth transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-novara-green hover:text-novara-earth focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100 p-5 flex flex-col space-y-4 opacity-0 transition-all duration-300 ease-in-out transform -translate-y-[20px] md:hidden">
+            <a href="index.html" class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Home</a>
+            <a href="about.html" class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">About Us</a>
+            <a href="products.html" class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Products</a>
+            <a href="process.html" class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Quality & Process</a>
+            <a href="gallery.html" class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Gallery</a>
+            <a href="contact.html" class="text-novara-green hover:text-novara-earth font-medium text-lg border-b border-gray-50 pb-2">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?q=80&w=2574&auto=format&fit=crop" alt="Tea Plantation Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-serif text-white font-bold mb-6 drop-shadow-lg tracking-tight reveal active">
+                Crafted by Nature
+            </h1>
+            <p class="text-xl md:text-2xl text-novara-white font-light mb-10 max-w-2xl mx-auto drop-shadow-md reveal active delay-100">
+                Premium export-grade dehydrated foods and natural tea products, sourcing the purest ingredients for a global audience.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center reveal active delay-200">
+                <a href="products.html" class="px-8 py-3 bg-novara-gold text-white font-medium rounded-full shadow-lg hover:bg-yellow-600 transition-all transform hover:-translate-y-1">Explore Collections</a>
+                <a href="about.html" class="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-novara-green transition-all transform hover:-translate-y-1">Our Story</a>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#featured" class="text-white text-2xl opacity-80 hover:opacity-100 transition-opacity">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span class="text-novara-gold font-serif italic text-lg mb-2 block">Our Finest Selection</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-novara-green font-bold mb-4">Pure. Natural. Exquisite.</h2>
+                <div class="w-24 h-1 bg-novara-earth mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 reveal">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563911892437-1feda9d5e34a?q=80&w=2600&auto=format&fit=crop" alt="Premium Tea" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-2xl font-serif font-bold mb-1">Tea Collection</h3>
+                        <p class="text-gray-200 text-sm mb-4 line-clamp-2">Experience the finest hand-picked tea leaves from the misty hills.</p>
+                        <a href="products.html#tea" class="inline-block text-novara-gold hover:text-white transition-colors font-medium text-sm uppercase tracking-wider">View Products <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 reveal delay-100">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1623855244183-52fd8d3ce2f7?q=80&w=2574&auto=format&fit=crop" alt="Dehydrated Fruits" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-2xl font-serif font-bold mb-1">Dehydrated Fruits</h3>
+                        <p class="text-gray-200 text-sm mb-4 line-clamp-2">Nature's candy, preserved with precision to retain flavor and nutrients.</p>
+                        <a href="products.html#fruits" class="inline-block text-novara-gold hover:text-white transition-colors font-medium text-sm uppercase tracking-wider">View Products <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 reveal delay-200">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=2670&auto=format&fit=crop" alt="Spices & Herbs" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 text-white w-full">
+                        <h3 class="text-2xl font-serif font-bold mb-1">Herbs & Spices</h3>
+                        <p class="text-gray-200 text-sm mb-4 line-clamp-2">Aromatic spices and herbs to elevate your culinary creations.</p>
+                        <a href="products.html#herbs" class="inline-block text-novara-gold hover:text-white transition-colors font-medium text-sm uppercase tracking-wider">View Products <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Snippet -->
+    <section class="py-20 bg-novara-beige/20 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-novara-green/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 bg-novara-earth/5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2 reveal">
+                <img src="https://images.unsplash.com/photo-1597405299496-6e4745811776?q=80&w=2671&auto=format&fit=crop" alt="Sustainable Farming" class="rounded-lg shadow-2xl relative z-10">
+                <div class="absolute top-10 left-10 w-full h-full border-2 border-novara-gold -z-0 rounded-lg transform translate-x-4 translate-y-4 hidden md:block"></div>
+            </div>
+            
+            <div class="w-full md:w-1/2 reveal delay-100">
+                <span class="text-novara-earth font-bold uppercase tracking-wider text-sm mb-2 block">Who We Are</span>
+                <h2 class="text-4xl lg:text-5xl font-serif text-novara-green font-bold mb-6">Rooted in Tradition, Aiming for Excellence</h2>
+                <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                    At Novara Natural, we believe that the best flavors come directly from the earth. Our commitment to sustainable farming and ethical sourcing ensures that every product we export meets the highest international standards of purity and taste.
+                </p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-gray-700">
+                        <i class="fa-solid fa-seedling text-novara-green mr-3"></i> 100% Natural & Organic
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <i class="fa-solid fa-earth-americas text-novara-green mr-3"></i> Export Quality Standards
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <i class="fa-solid fa-hand-holding-heart text-novara-green mr-3"></i> Ethically Sourced
+                    </li>
+                </ul>
+                <a href="about.html" class="inline-block px-8 py-3 bg-novara-green text-white font-medium rounded-full hover:bg-novara-earth transition-all shadow-md">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / CTA -->
+    <section class="py-24 bg-novara-green text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10 reveal">
+            <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">Partner with Novara Natural</h2>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
+                Looking for premium bulk orders or wholesale partnerships? Connect with us to bring the finest natural products to your market.
+            </p>
+            <a href="contact.html" class="inline-block px-10 py-4 bg-white text-novara-green font-bold rounded-full text-lg hover:bg-novara-gold hover:text-white transition-all shadow-xl transform hover:-translate-y-1">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Brand -->
+            <div class="md:col-span-1">
+                <a href="index.html" class="block mb-6">
+                    <span class="text-3xl font-serif font-bold text-white tracking-wide">NOVARA <span class="text-novara-gold font-light">NATURAL</span></span>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Bringing the purity of nature to the world. Premium dehydrated foods and teas for the discerning global market.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-novara-gold hover:text-white transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-novara-gold hover:text-white transition-all"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-novara-gold hover:text-white transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="md:col-span-1">
+                <h4 class="text-white font-serif font-bold text-lg mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="index.html" class="hover:text-novara-gold transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-novara-gold transition-colors">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-novara-gold transition-colors">Our Products</a></li>
+                    <li><a href="process.html" class="hover:text-novara-gold transition-colors">Quality Assurance</a></li>
+                    <li><a href="gallery.html" class="hover:text-novara-gold transition-colors">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-novara-gold transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="md:col-span-1">
+                <h4 class="text-white font-serif font-bold text-lg mb-6">Our Products</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="products.html#tea" class="hover:text-novara-gold transition-colors">Premium Teas</a></li>
+                    <li><a href="products.html#fruits" class="hover:text-novara-gold transition-colors">Dehydrated Fruits</a></li>
+                    <li><a href="products.html#vegetables" class="hover:text-novara-gold transition-colors">Dehydrated Vegetables</a></li>
+                    <li><a href="products.html#herbs" class="hover:text-novara-gold transition-colors">Herbs & Spices</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="md:col-span-1">
+                <h4 class="text-white font-serif font-bold text-lg mb-6">Contact Us</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-location-dot mt-1 mr-3 text-novara-gold"></i>
+                        <span>123 Green Valley Road, <br>Hill Country, Sri Lanka</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-phone mr-3 text-novara-gold"></i>
+                        <span>+94 77 123 4567</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-envelope mr-3 text-novara-gold"></i>
+                        <span>info@novaranatural.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <p>&copy; 2026 Novara Natural. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
